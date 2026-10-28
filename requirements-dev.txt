@@ -1,0 +1,12 @@
+# Lightweight set for running the test suite (no torch, no model downloads).
+fastapi>=0.110
+python-multipart>=0.0.9
+python-dotenv>=1.0
+pypdf>=4.0
+chromadb>=0.5
+rank-bm25>=0.2.2
+openai>=1.30
+anthropic>=0.40
+numpy
+httpx
+pytest>=8.0

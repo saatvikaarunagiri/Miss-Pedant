@@ -1,0 +1,18 @@
+# Web server
+fastapi>=0.110
+uvicorn[standard]>=0.29
+python-multipart>=0.0.9      # file uploads
+python-dotenv>=1.0
+
+# Retrieval
+pypdf>=4.0
+chromadb>=0.5
+sentence-transformers>=3.0
+rank-bm25>=0.2.2
+
+# Model clients (mlx_lm.server speaks the OpenAI protocol)
+openai>=1.30
+anthropic>=0.40
+
+# Local model server, Apple Silicon only (skipped automatically elsewhere)
+mlx-lm; sys_platform == "darwin" and platform_machine == "arm64"
